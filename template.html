@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="temp.css">
+    <title>Travel Authorization Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="formulario" id="formulario">
+            <div class="titulo1">
+                <h1 id="titulo1">Travel Authorization Form</h1>
+            </div>
+            <br>
+
+            <h2 id="titulo2">Sección A: Información del cliente</h2>
+            <hr id="linea1">
+            <div class="form-group" id="grupo__cargo">
+                <label for="cargo" class="formulario__label">Cargo: </label>
+                <input class="formulario__input" type="text" name="cargo" id="cargo">
+                <p class="formulario__input-error">El cargo tiene que ser de 4 a 100 dígitos y solo puede estar en mayúsculas.</p>
+            </div>
+            <div class="form-group" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre: </label>
+                <input class="formulario__input" type="text" name="nombre" id="nombre">
+                <p class="formulario__input-error">El nombre tiene que ser de 4 a 100 dígitos y solo puede estar en mayúsculas.</p>
+            </div>
+            <div class="form-group" id="grupo__pApellido">
+                <label for="pApellido" class="formulario__label">Primer Apellido: </label>
+                <input class="formulario__input" type="text" name="pApellido" id="pApellido">
+                <p class="formulario__input-error">El primer apellido tiene que ser de 4 a 100 dígitos y solo puede estar en mayúsculas.</p>
+            </div>
+            <div class="form-group" id="grupo__sApellido">
+                <label for="sApellido" class="formulario__label">Segundo Apellido: </label>
+                <input class="formulario__input" type="text" name="sApellido" id="sApellido">
+                <p class="formulario__input-error">El segundo apellido tiene que ser de 4 a 100 dígitos y solo puede estar en mayúsculas.</p>
+            </div>
+            <div class="form-group" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico: </label>
+                <input class="formulario__input" type="text" name="correo" id="correo">
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+            <div class="form-group" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Número de Teléfono: </label>
+                <input class="formulario__input" type="text" name="telefono" id="telefono">
+                <p class="formulario__input-error">El número de teléfono solo puede tener 9 valores numéricos.</p>
+            </div>
+            <br>
+
+            <h2 id="titulo3">Sección B: Información del viaje</h2>
+            <hr id="linea2">
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="nAero">Nombre de la Aerolínea: </label>
+                        <select name="nAero" id="nAero">
+                            <option value="latam">Latam</option>
+                            <option value="sky">Sky</option>
+                            <option value="avianca">Avianca</option>
+                            <option value="klm">KLM</option>
+                            <option value="airFrance">AirFrance</option>
+                            <option value="emirates">Emirates</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="grupo__destino">
+                        <label for="destino" class="formulario__label">Destino: </label>
+                        <input class="formulario__input" type="text" name="destino" id="destino">
+                        <p class="formulario__input-error">El destino debe ser sólo texto.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="fSalida">Fecha de Salida: </label>
+                        <input type="date" min="2020-01-01" name="fSalida" id="fSalida">
+                    </div>
+                    <div class="form-group">
+                        <label for="fRegreso">Fecha de Regreso: </label>
+                        <input type="date" min="2020-01-01" name="fRegreso" id="fRegreso">
+                    </div>
+                    <div class="form-group" id="grupo__coste">
+                        <label for="coste" class="formulario__label">Coste Estimado: </label>
+                        <input class="formulario__input" type="text" name="coste" id="coste">
+                        <p class="formulario__input-error">El coste estimado debe estar entre 100 y 1000, sólo números.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">¿Incluye la visita al cliente?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input class="in1" type="checkbox" name="correo" id="correo">
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Gastos adicionales estimados</p>
+                    <div class="form-group" id="grupo__alquiler">
+                        <label for="alquiler" class="formulario__label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alquiler de coche: </label>
+                        <input class="formulario__input" type="text" name="alquiler" id="alquiler">
+                        <p class="formulario__input-error">El alquiler debe estar entre 100 y 600, sólo números.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="hotel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hotel: </label>
+                        <input type="text" name="hotel" id="hotel">
+                    </div>
+                    <div class="form-group" id="grupo__comidas">
+                        <label for="comidas" class="formulario__label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comidas: </label>
+                        <input class="formulario__input" type="text" name="comidas" id="comidas">
+                        <p class="formulario__input-error">Sólo valores numéricos.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Estimado: </label>
+                        <input type="text" name="total" id="total">
+                    </div>
+
+                    <p>Método de pago utilizado</p>
+                    <div class="pago">
+                        <label><input class="in" type="radio" name="pago" value="metalico" checked=""> Metálico</label>
+                        </p>
+                        <label><input class="in" type="radio" name="pago" value="tarjeta"> Tarjeta de crédito</label>
+                        </p>
+                        <label><input class="in" type="radio" name="pago" value="cheque"> Cheque</label></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Propósito del viaje</p>
+                <textarea name="proposito" id="proposito" cols="150" rows="10"></textarea>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+            <button class="btn btn-primary" type="submit">Enviar</button>            
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="temp.js"></script>
+</body>
+
+</html>
